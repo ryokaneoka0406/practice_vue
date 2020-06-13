@@ -1,3 +1,4 @@
+// APIのモック
 const getUsers = (callback) => {
   setTimeout(() => {
     callback(null, [
@@ -13,6 +14,7 @@ const getUsers = (callback) => {
   }, 1000);
 };
 
+// 以下コンポーネント
 const UserList = Vue.component("user-list", {
   template: `
     <div>
